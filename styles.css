@@ -2094,15 +2094,17 @@ summary:focus-visible,
   }
 
   .story-visual {
-    width: min(100%, 320px);
+    width: min(100%, 282px);
     height: auto;
     max-height: none;
-    aspect-ratio: 1290 / 2796;
+    aspect-ratio: auto;
     background: #f8faf8;
   }
 
   .story-visual img {
-    object-fit: cover;
+    display: block;
+    height: auto;
+    object-fit: contain;
     object-position: top center;
   }
 
