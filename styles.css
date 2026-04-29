@@ -449,7 +449,7 @@ h3 {
 .hero-product-card {
   position: relative;
   width: min(100%, 340px);
-  aspect-ratio: 1320 / 2868;
+  aspect-ratio: 1320 / 2740;
   margin: auto;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.16);
@@ -859,7 +859,7 @@ h3 {
   justify-self: center;
   width: min(100%, 350px);
   height: auto;
-  aspect-ratio: 1320 / 2868;
+  aspect-ratio: 1320 / 2740;
   border-color: rgba(255, 255, 255, 0.16);
   border-radius: 34px;
   background: #f8faf8;
@@ -1017,7 +1017,7 @@ h3 {
 .progress-phone {
   justify-self: center;
   width: min(100%, 310px);
-  aspect-ratio: 1320 / 2868;
+  aspect-ratio: 1320 / 2740;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 34px;
@@ -1120,7 +1120,7 @@ h3 {
   align-self: end;
   justify-self: center;
   width: min(100%, 255px);
-  aspect-ratio: 1320 / 2868;
+  aspect-ratio: 1320 / 2740;
   overflow: hidden;
   margin: 1.05rem auto -118px;
   border: 1px solid rgba(17, 21, 28, 0.1);
@@ -1301,7 +1301,7 @@ h3 {
 .signature-phone {
   justify-self: center;
   width: min(100%, 315px);
-  aspect-ratio: 1320 / 2868;
+  aspect-ratio: 1320 / 2740;
   overflow: hidden;
   border: 1px solid rgba(17, 21, 28, 0.1);
   border-radius: 34px;
