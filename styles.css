@@ -2094,9 +2094,16 @@ summary:focus-visible,
   }
 
   .story-visual {
-    width: 100%;
+    width: min(100%, 320px);
     height: auto;
-    aspect-ratio: 4 / 5;
+    max-height: none;
+    aspect-ratio: 1290 / 2796;
+    background: #f8faf8;
+  }
+
+  .story-visual img {
+    object-fit: cover;
+    object-position: top center;
   }
 
   .progress-layout {

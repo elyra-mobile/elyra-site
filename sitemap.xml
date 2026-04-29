@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <url>
+    <loc>https://elyra-app.com/</loc>
+    <lastmod>2026-04-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elyra-app.com/index-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/" />
+  </url>
+  <url>
+    <loc>https://elyra-app.com/index-en.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elyra-app.com/index-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/" />
+  </url>
+  <url>
+    <loc>https://elyra-app.com/privacy.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elyra-app.com/privacy-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/privacy.html" />
+  </url>
+  <url>
+    <loc>https://elyra-app.com/privacy-en.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elyra-app.com/privacy-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/privacy.html" />
+  </url>
+  <url>
+    <loc>https://elyra-app.com/terms.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elyra-app.com/terms-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/terms.html" />
+  </url>
+  <url>
+    <loc>https://elyra-app.com/terms-en.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elyra-app.com/terms-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/terms.html" />
+  </url>
+  <url>
+    <loc>https://elyra-app.com/support.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elyra-app.com/support-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/support.html" />
+  </url>
+  <url>
+    <loc>https://elyra-app.com/support-en.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elyra-app.com/support-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/support.html" />
+  </url>
+  <url>
+    <loc>https://elyra-app.com/delete-account.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/delete-account.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elyra-app.com/delete-account-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/delete-account.html" />
+  </url>
+  <url>
+    <loc>https://elyra-app.com/delete-account-en.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/delete-account.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elyra-app.com/delete-account-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/delete-account.html" />
+  </url>
+</urlset>

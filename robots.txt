@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elyra-app.com/sitemap.xml
