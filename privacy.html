@@ -1,173 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Elyra privacy policy, covering how the app handles account, nutrition, training, progress, hydration, and support data."
+      content="Politique de confidentialité d'Elyra : compte, connexion Apple, nutrition, entraînement, communauté, suppléments, progression, hydratation, Firebase, support et suppression de compte."
     />
-    <meta name="theme-color" content="#f5f7fb" />
-    <title>Elyra | Privacy Policy</title>
+    <meta name="theme-color" content="#080d16" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://elyra-app.com/privacy.html" />
+    <link rel="alternate" hreflang="fr" href="https://elyra-app.com/privacy.html" />
+    <link rel="alternate" hreflang="en" href="https://elyra-app.com/privacy-en.html" />
+    <link rel="alternate" hreflang="x-default" href="https://elyra-app.com/privacy.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Elyra" />
+    <meta property="og:title" content="Elyra - Politique de confidentialité" />
+    <meta
+      property="og:description"
+      content="Comment Elyra traite les données de compte, nutrition, entraînement, communauté, suppléments, progression, hydratation et support."
+    />
+    <meta property="og:url" content="https://elyra-app.com/privacy.html" />
+    <meta property="og:image" content="https://elyra-app.com/assets/og/elyra-og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Elyra - Politique de confidentialité" />
+    <meta name="twitter:description" content="Comment Elyra traite les données de compte, nutrition, entraînement, communauté, suppléments, progression, hydratation et support." />
+    <meta name="twitter:image" content="https://elyra-app.com/assets/og/elyra-og.png" />
+    <title>Elyra - Politique de confidentialité</title>
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" href="assets/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="assets/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="assets/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
-  <body class="policy-page">
+  <body class="legal-page">
+    <a class="skip-link" href="#main">Aller au contenu</a>
     <div class="page-shell">
       <header class="site-header">
         <div class="container nav">
-          <a class="brand" href="index.html" aria-label="Elyra">
-            <span class="brand-mark" aria-hidden="true"></span>
-            <span class="brand-name">Elyra</span>
+          <a class="brand" href="index.html" aria-label="Accueil Elyra">
+            <img class="brand-icon" src="assets/brand/elyra-app-icon.png" alt="" width="44" height="44" />
+            <span class="brand-text">
+              <span class="brand-name">Elyra</span>
+              <span class="brand-subtitle">Confidentialité</span>
+            </span>
           </a>
+          <nav class="nav-links" aria-label="Navigation publique">
+            <a href="index.html">Accueil</a>
+            <a href="terms.html">Conditions</a>
+            <a href="support.html">Support</a>
+          </nav>
           <div class="nav-actions">
-            <a class="status-pill" href="index.html">Back to home</a>
-            <div class="language-switch" aria-label="Language selector">
-              <a class="language-link" href="privacy-fr.html" lang="fr">FR</a>
-              <span class="language-divider" aria-hidden="true">/</span>
-              <a class="language-link" href="privacy.html" aria-current="page">
-                EN
-              </a>
+            <a class="nav-support" href="delete-account.html">Supprimer un compte</a>
+            <div class="language-switch" aria-label="Choisir la langue">
+              <a class="language-link" href="privacy.html" aria-current="page">FR</a>
+              <span aria-hidden="true">/</span>
+              <a class="language-link" href="privacy-en.html" lang="en" data-language-link="en">EN</a>
             </div>
           </div>
         </div>
       </header>
 
-      <main class="policy-main">
-        <section class="policy-hero">
-          <div class="container">
-            <p class="eyebrow">Privacy Policy</p>
-            <h1>Privacy Policy</h1>
-            <p class="policy-lead">
-              This policy explains, in simple terms, what data Elyra may use,
-              why it matters to the app, and how we handle it in the V1
-              release.
-            </p>
-            <p class="policy-date">Last updated: April 8, 2026</p>
+      <main id="main" class="legal-main">
+        <section class="legal-hero section-pad">
+          <div class="container legal-hero-grid">
+            <div class="reveal">
+              <p class="eyebrow">Politique de confidentialité</p>
+              <h1>Vos données doivent rester compréhensibles.</h1>
+              <p class="legal-lead">
+                Cette page explique quelles données Elyra peut traiter, pourquoi
+                elles sont utiles au fonctionnement de l'app et comment les
+                demandes liées au compte sont gérées.
+              </p>
+              <p class="legal-date">Dernière mise à jour : 26 avril 2026</p>
+            </div>
+            <aside class="legal-summary reveal" aria-label="Résumé confidentialité">
+              <strong>Résumé rapide</strong>
+              <ul>
+                <li>Compte utilisateur et connexion Apple possibles.</li>
+                <li>Données nutrition, training, communauté, suppléments, progression, hydratation et profil.</li>
+                <li>Stockage cloud possible via Firebase et Firestore.</li>
+                <li>Suppression de compte accessible depuis l'app ou via support.</li>
+              </ul>
+            </aside>
           </div>
         </section>
 
-        <section class="policy-summary">
-          <div class="container policy-highlight-grid">
-            <article class="policy-highlight">
-              <h2>Public V1</h2>
-              <p>
-                The current public version does not include active ads, active
-                subscriptions, or public AI features.
-              </p>
-            </article>
+        <section class="legal-content section-pad">
+          <div class="container legal-layout">
+            <nav class="legal-toc reveal" aria-label="Sommaire">
+              <a href="#data">Données collectées</a>
+              <a href="#purpose">Finalités</a>
+              <a href="#services">Services tiers</a>
+              <a href="#rights">Vos droits</a>
+              <a href="#deletion">Suppression</a>
+            </nav>
 
-            <article class="policy-highlight">
-              <h2>User account</h2>
-              <p>
-                Elyra supports account creation and sign-in, including Sign in
-                with Apple when that option is available.
-              </p>
-            </article>
-
-            <article class="policy-highlight">
-              <h2>Contact</h2>
-              <p>
-                If you have any questions about your data or your account, you
-                can contact us at support.elyra@gmail.com.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="policy-content">
-          <div class="container">
-            <article class="policy-card">
-              <section class="policy-section">
-                <h2>1. Data we may collect</h2>
+            <article class="legal-document reveal">
+              <section id="intro">
+                <h2>1. Responsable et contact</h2>
                 <p>
-                  Depending on how you use Elyra, we may collect certain
-                  information needed to run the service.
+                  Elyra est une application fitness iPhone centrée sur la
+                  nutrition, l'entraînement, la communauté, les suppléments,
+                  l'hydratation et le suivi de progression. Pour toute question
+                  relative à cette politique ou à vos données, vous pouvez écrire à
+                  <a class="inline-link" href="mailto:support.elyra@gmail.com">support.elyra@gmail.com</a>.
                 </p>
-                <ul class="policy-list">
-                  <li>
-                    Account information, such as your email address, sign-in
-                    details, or information provided through Sign in with
-                    Apple.
-                  </li>
-                  <li>
-                    Data you add inside the app, for example for nutrition,
-                    training, progress, or hydration.
-                  </li>
-                  <li>
-                    Profile details, such as a display name or profile photo,
-                    if you choose to add one.
-                  </li>
-                  <li>
-                    Messages you send if you contact support by email.
-                  </li>
+              </section>
+
+              <section id="data">
+                <h2>2. Données que nous pouvons collecter</h2>
+                <p>
+                  Selon votre utilisation d'Elyra, nous pouvons traiter les
+                  informations nécessaires à la création du compte, à la
+                  synchronisation des données et au fonctionnement des écrans de
+                  suivi.
+                </p>
+                <ul>
+                  <li>Données de compte : adresse e-mail, identifiant utilisateur, méthode de connexion et informations transmises par Sign in with Apple lorsque cette option est utilisée.</li>
+                  <li>Données de profil : nom d'affichage, préférences, objectifs, photo de profil si vous choisissez d'en ajouter une.</li>
+                  <li>Données nutrition : aliments ajoutés, quantités, calories, macros, repas, recherches alimentaires et codes-barres scannés.</li>
+                  <li>Données training : exercices, modèles de séance, séances planifiées, séances réalisées, séries, charges, répétitions et historique.</li>
+                  <li>Données communauté : profil public limité, amis, séances publiées ou importées, interactions et paramètres de partage.</li>
+                  <li>Données suppléments : compléments ajoutés, prises, notes et informations associées.</li>
+                  <li>Données progression : poids, mesures, objectifs, tendances et repères de suivi.</li>
+                  <li>Données hydratation : objectifs et entrées liées à l'eau consommée.</li>
+                  <li>Données de support : contenu des messages envoyés à l'adresse de support.</li>
+                  <li>Données techniques limitées : informations nécessaires à la sécurité, à la stabilité, à la prévention d'abus ou au diagnostic d'erreurs.</li>
                 </ul>
               </section>
 
-              <section class="policy-section">
-                <h2>2. Why we use this data</h2>
-                <ul class="policy-list">
-                  <li>Create, secure, and manage your user account.</li>
-                  <li>Save and sync your data between sessions.</li>
-                  <li>Display your profile and the content you log in the app.</li>
-                  <li>Respond to your support requests.</li>
-                  <li>Improve the stability, reliability, and performance of Elyra.</li>
+              <section id="purpose">
+                <h2>3. Pourquoi ces données sont utilisées</h2>
+                <ul>
+                  <li>Créer, authentifier, sécuriser et gérer votre compte Elyra.</li>
+                  <li>Enregistrer, afficher et synchroniser vos données entre les sessions.</li>
+                  <li>Calculer et présenter vos indicateurs de nutrition, training, hydratation, suppléments et progression.</li>
+                  <li>Permettre les fonctions de communauté, de partage de séances et d'import lorsque vous les utilisez.</li>
+                  <li>Personnaliser l'expérience en fonction de vos objectifs et préférences.</li>
+                  <li>Répondre aux demandes de support et résoudre les difficultés signalées.</li>
+                  <li>Améliorer la fiabilité, la performance et la qualité générale de l'app.</li>
                 </ul>
               </section>
 
-              <section class="policy-section">
-                <h2>3. Storage and security</h2>
+              <section id="services">
+                <h2>4. Services cloud et fournisseurs utiles</h2>
                 <p>
-                  V1 data may be stored through services such as Firebase and
-                  Firestore. We use reasonable measures to help protect account
-                  access and stored data, but no online service can guarantee
-                  absolute security.
+                  Elyra peut utiliser Firebase et Firestore pour gérer
+                  l'authentification, le stockage et la synchronisation des
+                  données. Ces services permettent à l'app de conserver vos
+                  informations et de les retrouver entre plusieurs sessions.
+                </p>
+                <p>
+                  Lorsque vous utilisez la recherche nutrition ou le scan de
+                  code-barres, le terme recherché ou le code scanné peut être
+                  transmis depuis l'app à Open Food Facts ou à USDA FoodData
+                  Central afin de récupérer les données alimentaires
+                  correspondantes. Elyra ne transmet pas votre journal complet ni
+                  votre profil de compte à ces services pour ce lookup.
                 </p>
               </section>
 
-              <section class="policy-section">
-                <h2>4. User account and sign-in</h2>
+              <section>
+                <h2>5. Sign in with Apple</h2>
                 <p>
-                  You may use Elyra with a user account or through Sign in with
-                  Apple when that option is offered. You remain responsible for
-                  keeping your sign-in details confidential.
+                  Si vous choisissez Sign in with Apple, Apple peut transmettre
+                  à Elyra les informations nécessaires à la connexion, comme un
+                  identifiant utilisateur et, selon votre choix, une adresse
+                  e-mail réelle ou relayée. Ces informations sont utilisées pour
+                  vous connecter et gérer votre compte.
                 </p>
               </section>
 
-              <section class="policy-section">
-                <h2>5. What V1 does not include</h2>
+              <section>
+                <h2>6. Sécurité et conservation</h2>
                 <p>
-                  At this stage, the public V1 of Elyra does not include active
-                  ads, active subscriptions, or public AI features.
+                  Nous appliquons des mesures raisonnables pour protéger l'accès
+                  aux comptes et aux données stockées. Aucun service numérique ne
+                  peut toutefois garantir une sécurité absolue. Les données sont
+                  conservées tant que votre compte est actif ou tant qu'elles
+                  sont nécessaires au fonctionnement du service, au support, à la
+                  sécurité ou au respect d'obligations légales.
                 </p>
               </section>
 
-              <section class="policy-section">
-                <h2>6. Your rights</h2>
+              <section>
+                <h2>7. Publicité, abonnement et IA</h2>
                 <p>
-                  You can contact us to request access to your data, correct
-                  certain information, or request account deletion when
-                  possible and subject to any legal obligations that may apply.
+                  La version actuelle décrite par cette politique n'inclut pas de
+                  publicité active, pas d'abonnement actif et pas de
+                  fonctionnalité d'intelligence artificielle publique. Si ces
+                  éléments évoluent, cette page sera mise à jour.
                 </p>
               </section>
 
-              <section class="policy-section">
-                <h2>7. Support contact</h2>
+              <section id="rights">
+                <h2>8. Vos droits</h2>
                 <p>
-                  If you have any questions about this privacy policy or your
-                  data, you can write to
-                  <a class="inline-link" href="mailto:support.elyra@gmail.com">
-                    support.elyra@gmail.com
-                  </a>
-                  .
+                  Selon votre situation et la réglementation applicable, vous
+                  pouvez demander l'accès à vos données, leur correction, leur
+                  suppression, la limitation de certains traitements ou des
+                  informations complémentaires sur l'utilisation de vos données.
+                  Vous pouvez exercer ces demandes en écrivant à
+                  <a class="inline-link" href="mailto:support.elyra@gmail.com">support.elyra@gmail.com</a>.
                 </p>
               </section>
 
-              <section class="policy-section">
-                <h2>8. Changes to this policy</h2>
+              <section id="deletion">
+                <h2>9. Suppression du compte</h2>
                 <p>
-                  This policy may evolve as the product evolves. If an
-                  important update is made, the version published on this page
-                  will apply.
+                  Elyra propose la suppression de compte depuis l'app. Les
+                  étapes sont détaillées sur la page
+                  <a class="inline-link" href="delete-account.html">Supprimer un compte</a>.
+                  En cas de difficulté, vous pouvez contacter le support. Une
+                  conservation minimale peut être nécessaire lorsque la loi,
+                  la sécurité ou la résolution d'un litige l'impose.
+                </p>
+              </section>
+
+              <section>
+                <h2>10. Évolutions du produit</h2>
+                <p>
+                  Elyra évoluera avec le temps. Les nouvelles
+                  fonctionnalités susceptibles de modifier les traitements de
+                  données seront reflétées dans cette politique. La version
+                  publiée sur cette page est la référence en vigueur.
                 </p>
               </section>
             </article>
@@ -176,15 +242,27 @@
       </main>
 
       <footer class="site-footer">
-        <div class="container footer-content">
-          <p class="footer-brand">Elyra</p>
-          <div class="footer-links">
-            <a href="mailto:support.elyra@gmail.com">support.elyra@gmail.com</a>
-            <a href="index.html">Home</a>
+        <div class="container footer-grid">
+          <div>
+            <a class="footer-brand" href="index.html" aria-label="Accueil Elyra">
+              <img src="assets/brand/elyra-app-icon.png" alt="" width="38" height="38" loading="lazy" />
+              <span>Elyra</span>
+            </a>
+            <p class="footer-note">Nutrition, entraînement, communauté, suppléments et progression dans une expérience iPhone claire.</p>
           </div>
-          <p class="footer-note">Fitness app.</p>
+          <nav class="footer-links" aria-label="Pages publiques">
+            <a href="privacy.html">Confidentialité</a>
+            <a href="terms.html">Conditions</a>
+            <a href="support.html">Support</a>
+            <a href="delete-account.html">Supprimer un compte</a>
+          </nav>
+          <div class="footer-contact">
+            <a href="mailto:support.elyra@gmail.com">support.elyra@gmail.com</a>
+            <span>Dernière mise à jour : 26 avril 2026</span>
+          </div>
         </div>
       </footer>
     </div>
+    <script src="app.js" defer></script>
   </body>
 </html>

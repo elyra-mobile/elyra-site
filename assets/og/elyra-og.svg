@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Elyra">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8faf8"/>
+      <stop offset=".52" stop-color="#edf4f3"/>
+      <stop offset="1" stop-color="#f3f0ea"/>
+    </linearGradient>
+    <linearGradient id="iconBg" x1="782" y1="116" x2="1042" y2="376" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#293348"/>
+      <stop offset="1" stop-color="#080b12"/>
+    </linearGradient>
+    <linearGradient id="iconMark" x1="820" y1="322" x2="1002" y2="154" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8fb6d9"/>
+      <stop offset=".55" stop-color="#f7fbff"/>
+      <stop offset="1" stop-color="#cfe9df"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="70" y="70" width="1060" height="490" rx="28" fill="#fff" opacity=".9"/>
+  <rect x="70.5" y="70.5" width="1059" height="489" rx="27.5" fill="none" stroke="#dfe5e1"/>
+  <rect x="780" y="118" width="260" height="260" rx="58" fill="url(#iconBg)"/>
+  <path d="M842 314c32-7.6 64.4-26.3 97.7-56.2 17-15.3 32-24.4 45.2-27.6-18.6 36.2-50.4 67.3-95.2 93.2-21.3 12.4-37.2 15.5-47.7 9.2-6.4-3.8-6.4-10.1 0-18.6Z" fill="url(#iconMark)"/>
+  <path d="M850 276.6c14.6-28.4 43.6-49.3 87.2-63 20.4-6.5 34.3-13.2 41.5-20-1.3 18.5-19.8 36.6-56 54.2-32.1 15.8-56.4 30-72.7 42.5-3.2-3.5-3.2-8.1 0-13.7Z" fill="url(#iconMark)" opacity=".92"/>
+  <path d="M882 215.4c3.2-16.6 13.4-29.7 30.4-38.9 9.9 15 9.1 30.5-2.5 46.6-8.9 12.1-17.6 18.8-26.4 20.3-2.9-9.2-3.4-18.6-1.5-28Z" fill="url(#iconMark)" opacity=".9"/>
+  <text x="118" y="210" fill="#11151c" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="86" font-weight="800">Elyra</text>
+  <text x="122" y="286" fill="#11151c" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="600">Nutrition, training, progress.</text>
+  <text x="122" y="337" fill="#566271" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="500">A clearer fitness app for iPhone.</text>
+  <rect x="122" y="386" width="298" height="56" rx="28" fill="#0e1320"/>
+  <text x="150" y="423" fill="#fff" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="700">Coming soon</text>
+  <rect x="438" y="386" width="286" height="56" rx="28" fill="#edf4f3" stroke="#d3ddd8"/>
+  <text x="466" y="423" fill="#27303d" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="27" font-weight="700">elyra-app.com</text>
+  <rect x="802" y="435" width="216" height="9" rx="4.5" fill="#cfe9df"/>
+  <rect x="802" y="459" width="180" height="9" rx="4.5" fill="#8fb6d9"/>
+  <rect x="802" y="483" width="144" height="9" rx="4.5" fill="#dcc285"/>
+</svg>

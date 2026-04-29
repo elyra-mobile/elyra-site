@@ -5,143 +5,636 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Elyra, the premium fitness app that brings nutrition, training, and progress tracking together in one clear iPhone experience."
+      content="Elyra is the premium iPhone fitness app for nutrition, training, community workouts, supplements, hydration, and progress tracking."
     />
-    <meta name="theme-color" content="#f7f9fc" />
-    <title>Elyra | Premium fitness app</title>
+    <meta name="theme-color" content="#080d16" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://elyra-app.com/index-en.html" />
+    <link rel="alternate" hreflang="fr" href="https://elyra-app.com/" />
+    <link rel="alternate" hreflang="en" href="https://elyra-app.com/index-en.html" />
+    <link rel="alternate" hreflang="x-default" href="https://elyra-app.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Elyra" />
+    <meta property="og:title" content="Elyra - Premium fitness app for iPhone" />
+    <meta
+      property="og:description"
+      content="Nutrition, training, community workouts, supplements, hydration, and progress tracking in one premium iPhone experience."
+    />
+    <meta property="og:url" content="https://elyra-app.com/index-en.html" />
+    <meta property="og:image" content="https://elyra-app.com/assets/og/elyra-og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Elyra - Premium fitness app for iPhone" />
+    <meta
+      name="twitter:description"
+      content="A premium iPhone app for nutrition, training, community workouts, supplements, hydration, and progress tracking."
+    />
+    <meta name="twitter:image" content="https://elyra-app.com/assets/og/elyra-og.png" />
+
+    <title>Elyra - Premium fitness app for iPhone</title>
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" href="assets/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="assets/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="assets/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="preload" as="image" href="assets/brand/elyra-app-icon.png" />
+    <link rel="preload" as="image" href="assets/screenshots/en/home.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Elyra",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS",
+        "description": "Elyra brings nutrition, training, community workouts, supplements, hydration, and progress tracking together in one clear iPhone experience.",
+        "image": "https://elyra-app.com/assets/og/elyra-og.png",
+        "url": "https://elyra-app.com/index-en.html",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Elyra"
+        }
+      }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <div class="page-shell">
       <header class="site-header">
         <div class="container nav">
-          <a class="brand" href="#top" aria-label="Elyra">
-            <span class="brand-mark" aria-hidden="true"></span>
-            <span class="brand-name">Elyra</span>
+          <a class="brand" href="index-en.html" aria-label="Elyra home">
+            <img
+              class="brand-icon"
+              src="assets/brand/elyra-app-icon.png"
+              alt=""
+              width="44"
+              height="44"
+              decoding="async"
+            />
+            <span class="brand-text">
+              <span class="brand-name">Elyra</span>
+              <span class="brand-subtitle">iPhone fitness</span>
+            </span>
           </a>
+
+          <nav class="nav-links" aria-label="Primary navigation">
+            <a href="#app">App</a>
+            <a href="#nutrition">Nutrition</a>
+            <a href="#training">Training</a>
+            <a href="#community">Community</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+
           <div class="nav-actions">
-            <div class="language-switch" aria-label="Language selector">
-              <a class="language-link" href="index-fr.html" lang="fr">FR</a>
-              <span class="language-divider" aria-hidden="true">/</span>
-              <a class="language-link" href="index-en.html" aria-current="page">
-                EN
-              </a>
+            <a class="nav-support" href="support-en.html">Support</a>
+            <div class="language-switch" aria-label="Choose language">
+              <a class="language-link" href="index.html" lang="fr" data-language-link="fr">FR</a>
+              <span aria-hidden="true">/</span>
+              <a class="language-link" href="index-en.html" aria-current="page">EN</a>
             </div>
           </div>
         </div>
       </header>
 
-      <main id="top">
-        <section class="hero">
+      <main id="main">
+        <section class="hero section-pad" id="app">
           <div class="container hero-grid">
-            <div class="hero-copy">
-              <p class="hero-label">iPhone app</p>
-              <h1>Everything you need.<br />One app.</h1>
+            <div class="hero-copy reveal">
+              <p class="eyebrow">Premium fitness app for iPhone</p>
+              <h1>Elyra. Fitness tracking, made clear.</h1>
               <p class="hero-text">
-                Elyra brings nutrition, training, and progress tracking
-                together in one clear experience.
+                Nutrition, training, hydration, and progress tracking brought
+                together in a calm, readable experience that keeps each day easy
+                to follow.
               </p>
-              <button class="cta-button" type="button" disabled>
-                Coming soon on the App Store
-              </button>
+              <div class="hero-actions" aria-label="Primary actions">
+                <a class="button button-primary" href="#app">Discover Elyra</a>
+                <a class="button button-secondary" href="#app">See the app</a>
+              </div>
+              <ul class="trust-list" aria-label="Trust points">
+                <li>Clear nutrition</li>
+                <li>Structured training</li>
+                <li>Community</li>
+                <li>Supplements</li>
+              </ul>
             </div>
 
-            <figure class="hero-visual">
-              <img
-                src="assets/app-store/elyra-app-store-home-hero-en.png"
-                alt="Elyra App Store visual showing the home screen."
-                decoding="async"
-                width="1290"
-                height="1792"
-              />
-            </figure>
-          </div>
-        </section>
-
-        <section class="promise">
-          <div class="container">
-            <p class="promise-line">One place to track what matters.</p>
-          </div>
-        </section>
-
-        <section class="visuals" id="visuals">
-          <div class="container">
-            <p class="section-label">Product previews</p>
-
-            <div class="visuals-grid" aria-label="Elyra App Store visuals">
-              <figure class="visual-item">
+            <div class="hero-showcase reveal" aria-label="Elyra app previews">
+              <figure class="hero-product-card">
                 <img
-                  src="assets/app-store/elyra-app-store-nutrition-en.png"
-                  alt="Elyra App Store visual for nutrition."
-                  loading="lazy"
+                  src="assets/screenshots/en/home.png"
+                  alt="Preview of Elyra's home screen on iPhone."
+                  width="1320"
+                  height="2868"
                   decoding="async"
-                  width="1290"
-                  height="2796"
+                  fetchpriority="high"
                 />
-                <figcaption>Nutrition</figcaption>
               </figure>
-
-              <figure class="visual-item">
-                <img
-                  src="assets/app-store/elyra-app-store-training-en.png"
-                  alt="Elyra App Store visual for training."
-                  loading="lazy"
-                  decoding="async"
-                  width="1290"
-                  height="2796"
-                />
-                <figcaption>Training</figcaption>
-              </figure>
-
-              <figure class="visual-item">
-                <img
-                  src="assets/app-store/elyra-app-store-progress-en.png"
-                  alt="Elyra App Store visual for progress."
-                  loading="lazy"
-                  decoding="async"
-                  width="1290"
-                  height="2796"
-                />
-                <figcaption>Progress</figcaption>
-              </figure>
+              <div class="hero-note" aria-hidden="true">
+                <span>Clear daily view</span>
+                <strong>Nutrition, training, and progress</strong>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="pillars" id="fonctionnalites">
+        <section class="product-section section-pad" id="nutrition">
           <div class="container">
-            <div class="pillars-grid">
-              <article class="pillar-card">
-                <h2>Nutrition</h2>
-                <p>A clear daily log, easy to read.</p>
+            <div class="section-heading reveal">
+              <p class="eyebrow">Nutrition</p>
+              <h2>Track meals without spending the day on it.</h2>
+              <p>
+                Food log, macros, food search, and barcode scan: Elyra organizes
+                the essentials in one place.
+              </p>
+            </div>
+            <div class="feature-grid nutrition-layout">
+              <div class="nutrition-copy-group">
+                <article class="feature-card reveal">
+                  <span class="feature-kicker">Clear log</span>
+                  <h3>Calories and macros stay easy to read.</h3>
+                  <p>
+                    Calories, protein, carbs, and fat are grouped clearly, with
+                    the right amount of detail.
+                  </p>
+                </article>
+                <article class="feature-card reveal">
+                  <span class="feature-kicker">Fast lookup</span>
+                  <h3>Foods are easier to add.</h3>
+                  <p>
+                    Search, scan, and add meals faster, with useful information in
+                    the right place.
+                  </p>
+                </article>
+              </div>
+              <figure class="feature-visual nutrition-device reveal">
+                <img
+                  src="assets/screenshots/en/nutrition.png"
+                  alt="Preview of Elyra nutrition tracking."
+                  width="1320"
+                  height="2868"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </div>
+
+            <div class="feature-showcase-grid nutrition-more" aria-label="Nutrition features">
+              <article class="feature-showcase-card reveal">
+                <div class="feature-showcase-copy">
+                  <span class="feature-kicker">Meal plan</span>
+                  <h3>Plan the meals that shape your week.</h3>
+                  <p>
+                    Add meals, mark what is planned, and keep your intake visible
+                    before the day gets busy.
+                  </p>
+                </div>
+                <figure class="feature-showcase-phone">
+                  <img
+                    src="assets/screenshots/en/meal-plan.png"
+                    alt="Preview of Elyra meal planning."
+                    width="1320"
+                    height="2868"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </article>
+              <article class="feature-showcase-card reveal">
+                <div class="feature-showcase-copy">
+                  <span class="feature-kicker">Nutrition stats</span>
+                  <h3>See how the day compares with your goals.</h3>
+                  <p>
+                    Calories, macros, and micronutrients stay readable so you can
+                    adjust with more precision.
+                  </p>
+                </div>
+                <figure class="feature-showcase-phone">
+                  <img
+                    src="assets/screenshots/en/nutrition-stats.png"
+                    alt="Preview of nutrition statistics in Elyra."
+                    width="1320"
+                    height="2868"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </article>
+              <article class="feature-showcase-card reveal">
+                <div class="feature-showcase-copy">
+                  <span class="feature-kicker">Recipes</span>
+                  <h3>Find meal ideas that are ready to add.</h3>
+                  <p>
+                    Review ingredients, macros, and steps, then place the recipe
+                    directly into your plan.
+                  </p>
+                </div>
+                <figure class="feature-showcase-phone">
+                  <img
+                    src="assets/screenshots/en/recipe.png"
+                    alt="Preview of a recipe in Elyra."
+                    width="1320"
+                    height="2868"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-section section-pad" id="training">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Training</p>
+              <h2>Structured workouts, with history that stays useful.</h2>
+              <p>
+                Prepare your workouts, log your sets, and find your history
+                without jumping between screens.
+              </p>
+            </div>
+            <div class="story-grid">
+              <figure class="story-visual reveal">
+                <img
+                  src="assets/screenshots/en/training.png"
+                  alt="Preview of training in Elyra."
+                  width="1320"
+                  height="2868"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <div class="story-list">
+                <article class="story-item reveal">
+                  <span>01</span>
+                  <h3>Prepare the workout</h3>
+                  <p>Saved workouts, favorite exercises, and past sessions stay easy to find.</p>
+                </article>
+                <article class="story-item reveal">
+                  <span>02</span>
+                  <h3>Track during the workout</h3>
+                  <p>Sets, weights, and rest times stay visible while you train.</p>
+                </article>
+                <article class="story-item reveal">
+                  <span>03</span>
+                  <h3>Review your progress</h3>
+                  <p>History helps you see what is improving, without needing to overthink it.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="feature-showcase-grid training-more" aria-label="Training features">
+              <article class="feature-showcase-card reveal">
+                <div class="feature-showcase-copy">
+                  <span class="feature-kicker">Exercise library</span>
+                  <h3>Find the right exercise quickly.</h3>
+                  <p>
+                    Details, tips, categories, and history keep every movement
+                    easy to review.
+                  </p>
+                </div>
+                <figure class="feature-showcase-phone">
+                  <img
+                    src="assets/screenshots/en/exercise-detail.png"
+                    alt="Preview of an exercise detail page in Elyra."
+                    width="1320"
+                    height="2868"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </article>
+              <article class="feature-showcase-card reveal">
+                <div class="feature-showcase-copy">
+                  <span class="feature-kicker">Custom exercise</span>
+                  <h3>Create movements your own way.</h3>
+                  <p>
+                    Name the exercise, pick the category, muscle, and equipment,
+                    then keep it in your library.
+                  </p>
+                </div>
+                <figure class="feature-showcase-phone">
+                  <img
+                    src="assets/screenshots/en/custom-exercise.png"
+                    alt="Preview of custom exercise creation in Elyra."
+                    width="1320"
+                    height="2868"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </article>
+              <article class="feature-showcase-card reveal">
+                <div class="feature-showcase-copy">
+                  <span class="feature-kicker">Live workout</span>
+                  <h3>Log sets while you train.</h3>
+                  <p>
+                    Weight, reps, rest, and sets stay in one clear place as your
+                    workout moves forward.
+                  </p>
+                </div>
+                <figure class="feature-showcase-phone">
+                  <img
+                    src="assets/screenshots/en/training.png"
+                    alt="Preview of an active workout in Elyra."
+                    width="1320"
+                    height="2868"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-section section-pad" id="progress">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Progress</p>
+              <h2>Progress that stays easy to read.</h2>
+              <p>
+                Weight, goals, workouts, and hydration stay together so you can
+                follow what is changing day after day.
+              </p>
+            </div>
+            <div class="progress-layout">
+              <div class="progress-overview reveal">
+                <span class="feature-kicker">Personal tracking</span>
+                <h3>Keep track of your progress.</h3>
+                <p>
+                  Elyra brings your measurements and history together so you can
+                  spot trends, adjust goals, and stay motivated.
+                </p>
+                <dl class="progress-stats" aria-label="Tracked items">
+                  <div>
+                    <dt>Weight</dt>
+                    <dd>Recent measures</dd>
+                  </div>
+                  <div>
+                    <dt>Workouts</dt>
+                    <dd>Saved history</dd>
+                  </div>
+                  <div>
+                    <dt>Hydration</dt>
+                    <dd>Daily tracking</dd>
+                  </div>
+                </dl>
+              </div>
+              <figure class="progress-phone reveal">
+                <img
+                  src="assets/screenshots/en/progress.png"
+                  alt="Detailed progress preview in Elyra."
+                  width="1320"
+                  height="2868"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </div>
+
+            <div class="feature-showcase-grid progress-more" aria-label="Hydration feature">
+              <article class="feature-showcase-card feature-showcase-card-wide reveal">
+                <div class="feature-showcase-copy">
+                  <span class="feature-kicker">Hydration</span>
+                  <h3>Keep today&apos;s water in view.</h3>
+                  <p>
+                    Add a glass, enter a precise volume, and review your last
+                    few days without leaving your routine.
+                  </p>
+                </div>
+                <figure class="feature-showcase-phone feature-showcase-phone-large">
+                  <img
+                    src="assets/screenshots/en/hydration.png"
+                    alt="Preview of hydration tracking in Elyra."
+                    width="1320"
+                    height="2868"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-section signature-section section-pad" id="community">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Elyra features</p>
+              <h2>Tools that make Elyra feel different.</h2>
+              <p>
+                Elyra goes beyond basic tracking: shared workouts, per-side
+                training, and supplements all live in the same app.
+              </p>
+            </div>
+
+            <div class="signature-grid">
+              <article class="signature-card signature-card-featured reveal">
+                <div class="signature-copy">
+                  <span class="feature-kicker">Community</span>
+                  <h3>Shared workouts, ready to import.</h3>
+                  <p>
+                    Find your Elyra friends, publish workouts, and import
+                    sessions that fit your training without rebuilding them by
+                    hand.
+                  </p>
+                  <ul class="signature-points" aria-label="Community points">
+                    <li>Workout feed</li>
+                    <li>Private sharing</li>
+                    <li>Quick import</li>
+                  </ul>
+                </div>
+                <figure class="signature-phone">
+                  <img
+                    src="assets/screenshots/en/community.png"
+                    alt="Preview of Elyra community workout sharing."
+                    width="1320"
+                    height="2868"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
               </article>
 
-              <article class="pillar-card">
-                <h2>Training</h2>
-                <p>Templates, sessions, and history in one place.</p>
+              <article class="signature-card reveal">
+                <div class="signature-copy">
+                  <span class="feature-kicker">Per-side training</span>
+                  <h3>Track left and right separately.</h3>
+                  <p>
+                    For unilateral exercises, Elyra lets you log weight and reps
+                    on each side with the same clean workout flow.
+                  </p>
+                </div>
+                <figure class="signature-phone signature-phone-small">
+                  <img
+                    src="assets/screenshots/en/unilateral.png"
+                    alt="Preview of per-side exercise tracking in Elyra."
+                    width="1320"
+                    height="2868"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
               </article>
 
-              <article class="pillar-card">
-                <h2>Progress</h2>
-                <p>Weight and key markers, visible at a glance.</p>
+              <article class="signature-card reveal">
+                <div class="signature-copy">
+                  <span class="feature-kicker">Supplements</span>
+                  <h3>Your supplements and doses in one place.</h3>
+                  <p>
+                    Keep track of supplements, review useful details, and keep a
+                    clear record of what you take.
+                  </p>
+                </div>
+                <figure class="signature-phone signature-phone-small">
+                  <img
+                    src="assets/screenshots/en/supplements.png"
+                    alt="Preview of supplement tracking in Elyra."
+                    width="1320"
+                    height="2868"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
               </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="why-section section-pad" aria-labelledby="why-title">
+          <div class="container why-grid">
+            <div class="section-copy reveal">
+              <p class="eyebrow">Why Elyra</p>
+              <h2 id="why-title">A complete app that keeps things simple.</h2>
+            </div>
+            <div class="why-list">
+              <article class="why-item reveal">
+                <h3>Quiet by default</h3>
+                <p>
+                  Screens are made to be understood quickly, with the right
+                  information at the right moment.
+                </p>
+              </article>
+              <article class="why-item reveal">
+                <h3>Complete without feeling heavy</h3>
+                <p>
+                  Nutrition, training, community, supplements, and progress stay
+                  together without making tracking feel heavier.
+                </p>
+              </article>
+              <article class="why-item reveal">
+                <h3>Respectful by design</h3>
+                <p>
+                  Privacy, support, and account deletion pages stay accessible
+                  and easy to find.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq-section section-pad" id="faq" aria-labelledby="faq-title">
+          <div class="container faq-grid">
+            <div class="section-copy reveal">
+              <p class="eyebrow">FAQ</p>
+              <h2 id="faq-title">Useful answers before you start.</h2>
+            </div>
+            <div class="faq-list reveal">
+              <details>
+                <summary>Who is Elyra for?</summary>
+                <p>
+                  For people who want nutrition, training, and progress tracking,
+                  with community workouts and supplements in an app that feels
+                  clear and easy to use every day.
+                </p>
+              </details>
+              <details>
+                <summary>Does Elyra replace medical advice?</summary>
+                <p>
+                  No. Elyra is a personal tracking tool. For medical goals,
+                  conditions, or specific constraints, ask a qualified
+                  professional.
+                </p>
+              </details>
+              <details>
+                <summary>What data can the app store?</summary>
+                <p>
+                  Account data and information added inside the app, such as
+                  nutrition, training, community, supplements, progress,
+                  hydration, and profile details. The privacy policy explains
+                  those points in more detail.
+                </p>
+              </details>
+              <details>
+                <summary>How can I request account deletion?</summary>
+                <p>
+                  Account deletion is available from inside the app. A dedicated
+                  page also explains the steps and the support contact if
+                  anything is difficult.
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section class="final-cta section-pad">
+          <div class="container final-cta-inner reveal">
+            <p class="eyebrow">Elyra on iPhone</p>
+            <h2>A simpler routine starts with a clearer app.</h2>
+            <p>
+              Elyra brings nutrition, training, community, supplements, and
+              progress together so tracking your fitness does not become another
+              chore.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#app">Discover the experience</a>
+              <a class="button button-secondary" href="support-en.html">Contact Elyra</a>
             </div>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
-        <div class="container footer-content">
-          <p class="footer-brand">Elyra</p>
-          <div class="footer-links">
-            <a href="mailto:support.elyra@gmail.com">support.elyra@gmail.com</a>
-            <a href="privacy-en.html" aria-label="Privacy policy">
-              Privacy Policy
+        <div class="container footer-grid">
+          <div>
+            <a class="footer-brand" href="index-en.html" aria-label="Elyra home">
+              <img src="assets/brand/elyra-app-icon.png" alt="" width="38" height="38" loading="lazy" />
+              <span>Elyra</span>
             </a>
+            <p class="footer-note">
+              Premium fitness app for iPhone. Nutrition, training, community,
+              supplements, and progress in one clear experience.
+            </p>
           </div>
-          <p class="footer-note">Fitness app.</p>
+          <nav class="footer-links" aria-label="Public pages">
+            <a href="privacy-en.html">Privacy</a>
+            <a href="terms-en.html">Terms</a>
+            <a href="support-en.html">Support</a>
+            <a href="delete-account-en.html">Delete account</a>
+          </nav>
+          <div class="footer-contact">
+            <a href="mailto:support.elyra@gmail.com">support.elyra@gmail.com</a>
+            <span>Last updated: April 26, 2026</span>
+          </div>
         </div>
       </footer>
     </div>
+    <script src="app.js" defer></script>
   </body>
 </html>

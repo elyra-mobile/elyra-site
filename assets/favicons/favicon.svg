@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Elyra">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="6" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#293348"/>
+      <stop offset="1" stop-color="#080b12"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="15" y1="50" x2="52" y2="16" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8fb6d9"/>
+      <stop offset="0.52" stop-color="#f7fbff"/>
+      <stop offset="1" stop-color="#cfe9df"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <path d="M17.5 43.8c7.7-1.8 15.4-6.3 23.3-13.5 4.1-3.7 7.7-5.9 10.8-6.7-4.4 8.7-12 16.2-22.7 22.4-5.1 3-8.9 3.7-11.4 2.2-1.5-.9-1.5-2.4 0-4.4Z" fill="url(#mark)"/>
+  <path d="M19.4 34.8c3.5-6.8 10.4-11.8 20.9-15.1 4.9-1.6 8.2-3.2 9.9-4.8-.3 4.4-4.7 8.7-13.4 13-7.7 3.8-13.5 7.2-17.4 10.2-.8-.8-.8-1.9 0-3.3Z" fill="url(#mark)" opacity=".92"/>
+  <path d="M27 20.2c.8-4 3.2-7.1 7.2-9.3 2.4 3.6 2.2 7.3-.6 11.1-2.1 2.9-4.2 4.5-6.3 4.9-.7-2.2-.8-4.4-.3-6.7Z" fill="url(#mark)" opacity=".9"/>
+</svg>
