@@ -363,10 +363,10 @@ h3 {
 }
 
 .hero h1 {
-  max-width: 11.5ch;
+  max-width: 13.8ch;
   margin-top: 1.15rem;
   color: #fff;
-  font-size: 4.85rem;
+  font-size: 4.35rem;
   line-height: 0.96;
 }
 
@@ -1837,7 +1837,7 @@ summary:focus-visible,
   }
 
   .hero h1 {
-    max-width: 12.5ch;
+    max-width: 14ch;
     font-size: 4rem;
   }
 
@@ -2010,7 +2010,7 @@ summary:focus-visible,
   }
 
   .hero h1 {
-    max-width: 12.5ch;
+    max-width: 14ch;
     font-size: 2.9rem;
     line-height: 1;
   }
