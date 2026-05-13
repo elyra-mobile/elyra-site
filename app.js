@@ -170,10 +170,24 @@
     let openTimer;
 
     const now = () => Date.now();
+    const readStorage = (key) => {
+      try {
+        return window.localStorage.getItem(key);
+      } catch (error) {
+        return null;
+      }
+    };
+    const writeStorage = (key, value) => {
+      try {
+        window.localStorage.setItem(key, value);
+      } catch (error) {
+        // If storage is unavailable, keep the popup functional for the session.
+      }
+    };
 
     const isSuppressed = () => {
-      if (localStorage.getItem(submittedKey) === "true") return true;
-      const dismissedUntil = Number(localStorage.getItem(dismissedUntilKey) || 0);
+      if (readStorage(submittedKey) === "true") return true;
+      const dismissedUntil = Number(readStorage(dismissedUntilKey) || 0);
       return dismissedUntil > now();
     };
 
@@ -185,7 +199,7 @@
 
     const closePopup = ({ persist = true } = {}) => {
       if (persist) {
-        localStorage.setItem(
+        writeStorage(
           dismissedUntilKey,
           String(now() + EMAIL_CAPTURE_DISMISS_DAYS * 24 * 60 * 60 * 1000)
         );
@@ -252,7 +266,7 @@
           throw new Error(`Email endpoint returned ${response.status}`);
         }
 
-        localStorage.setItem(submittedKey, "true");
+        writeStorage(submittedKey, "true");
         setStatus(form.getAttribute("data-success-message") || "Merci, c'est noté.", "success");
         form.reset();
         window.setTimeout(() => closePopup({ persist: false }), 1200);

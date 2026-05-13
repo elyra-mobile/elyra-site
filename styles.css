@@ -1618,7 +1618,7 @@ h3 {
 .email-capture {
   position: fixed;
   right: 22px;
-  bottom: 22px;
+  bottom: calc(22px + env(safe-area-inset-bottom));
   z-index: 90;
   width: min(390px, calc(100vw - 44px));
   opacity: 0;
@@ -2297,9 +2297,13 @@ summary:focus-visible,
 
   .nav-links {
     order: 3;
-    width: 100%;
+    width: fit-content;
+    min-width: 0;
+    max-width: 100%;
+    margin-inline: auto;
     justify-self: stretch;
-    justify-content: flex-start;
+    justify-content: center;
+    overflow-x: auto;
     padding: 0.25rem;
     border-radius: var(--radius);
     background: rgba(255, 255, 255, 0.78);
@@ -2616,7 +2620,7 @@ summary:focus-visible,
 
   .email-capture {
     right: 14px;
-    bottom: 14px;
+    bottom: calc(14px + env(safe-area-inset-bottom));
     left: 14px;
     width: auto;
   }

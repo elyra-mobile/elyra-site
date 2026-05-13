@@ -1,7 +1,7 @@
 {
   "name": "Elyra",
   "short_name": "Elyra",
-  "description": "Premium iPhone fitness app for nutrition, training, community workouts, supplements, hydration, and progress tracking.",
+  "description": "iPhone fitness app for nutrition, training, community workouts, supplements, hydration, and progress tracking.",
   "id": "https://elyra-app.com/",
   "start_url": "/",
   "scope": "/",
