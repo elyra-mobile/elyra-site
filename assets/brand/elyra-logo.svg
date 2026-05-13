@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 88" role="img" aria-label="Elyra">
+  <defs>
+    <linearGradient id="iconBg" x1="8" y1="6" x2="76" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#293348"/>
+      <stop offset="1" stop-color="#080b12"/>
+    </linearGradient>
+    <linearGradient id="iconMark" x1="18" y1="68" x2="68" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8fb6d9"/>
+      <stop offset=".55" stop-color="#f7fbff"/>
+      <stop offset="1" stop-color="#cfe9df"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="80" height="80" rx="20" fill="url(#iconBg)"/>
+  <path d="M24 59c10-2.4 20.2-8.3 30.7-17.7 5.3-4.8 10-7.7 14.2-8.7-5.8 11.4-15.8 21.2-29.9 29.3-6.7 3.9-11.7 4.9-15 2.9-2-1.2-2-3.2 0-5.8Z" fill="url(#iconMark)"/>
+  <path d="M26.5 47.2c4.6-8.9 13.7-15.5 27.4-19.8 6.4-2 10.8-4.1 13-6.3-.4 5.8-6.2 11.5-17.6 17-10.1 5-17.7 9.4-22.8 13.4-1-1.1-1-2.5 0-4.3Z" fill="url(#iconMark)" opacity=".92"/>
+  <path d="M36.5 28c1-5.2 4.2-9.3 9.5-12.2 3.1 4.7 2.9 9.6-.8 14.6-2.8 3.8-5.5 5.9-8.3 6.4-.9-2.9-1-5.8-.4-8.8Z" fill="url(#iconMark)" opacity=".9"/>
+  <text x="110" y="57" fill="#11151c" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="42" font-weight="800">Elyra</text>
+</svg>

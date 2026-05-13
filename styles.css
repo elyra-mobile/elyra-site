@@ -104,6 +104,15 @@ ul {
   margin-bottom: 0;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
 .skip-link {
   position: fixed;
   z-index: 100;
@@ -1606,6 +1615,317 @@ h3 {
   color: var(--sage);
 }
 
+.email-capture {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 90;
+  width: min(390px, calc(100vw - 44px));
+  opacity: 0;
+  transform: translate3d(0, 18px, 0);
+  transition:
+    opacity 240ms ease,
+    transform 240ms ease;
+  pointer-events: none;
+}
+
+.email-capture[hidden] {
+  display: none;
+}
+
+.email-capture.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+
+.email-capture-card {
+  position: relative;
+  overflow: hidden;
+  padding: 1.15rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 22px;
+  background: var(--deep-panel);
+  color: #fff;
+  box-shadow: var(--shadow-deep);
+}
+
+.email-capture-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 78% 14%, rgba(207, 233, 223, 0.18), transparent 36%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06), transparent 54%);
+  pointer-events: none;
+}
+
+.email-capture-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.email-capture-close {
+  position: absolute;
+  top: 0.72rem;
+  right: 0.72rem;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  cursor: pointer;
+}
+
+.email-capture h2 {
+  max-width: 300px;
+  padding-right: 2.3rem;
+  color: #fff;
+  font-size: 1.32rem;
+  line-height: 1.08;
+}
+
+.email-capture p {
+  margin-top: 0.65rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.55;
+}
+
+.email-capture-form {
+  display: grid;
+  gap: 0.62rem;
+  margin-top: 1rem;
+}
+
+.email-capture-field {
+  min-height: 48px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  padding: 0 1rem;
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.email-capture-field::placeholder {
+  color: rgba(102, 113, 127, 0.7);
+}
+
+.email-capture-form .button {
+  width: 100%;
+}
+
+.email-capture-note {
+  margin-top: 0.62rem;
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.email-capture-status {
+  min-height: 1.2rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.email-capture-status[data-tone="success"] {
+  color: var(--mint);
+}
+
+.email-capture-status[data-tone="error"] {
+  color: #ffd0ca;
+}
+
+.public-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.public-card,
+.timeline-item,
+.copy-block,
+.download-card,
+.quote-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-large);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: var(--shadow-soft);
+}
+
+.public-card {
+  padding: 1.15rem;
+}
+
+.public-card span {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.public-card strong {
+  display: block;
+  margin-top: 0.65rem;
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  left: 17px;
+  width: 2px;
+  background: rgba(107, 141, 125, 0.22);
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 0.9rem;
+  padding: 1rem;
+}
+
+.timeline-marker {
+  z-index: 1;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--navy);
+  color: #fff;
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.timeline-marker.is-next {
+  background: rgba(207, 233, 223, 0.9);
+  color: var(--navy);
+}
+
+.timeline-item h3 {
+  font-size: 1.05rem;
+}
+
+.timeline-item p {
+  margin-top: 0.3rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.social-card-grid,
+.download-grid,
+.quote-grid,
+.fact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.social-card,
+.download-card {
+  min-height: 132px;
+  display: grid;
+  align-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem;
+}
+
+.social-card {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-large);
+  background: var(--deep-panel);
+  color: #fff;
+  box-shadow: var(--shadow-deep);
+}
+
+.social-card span,
+.download-card span {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.social-card span {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.social-card strong,
+.download-card strong {
+  font-size: 1.2rem;
+}
+
+.copy-block {
+  padding: 1.15rem;
+}
+
+.copy-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.copy-button {
+  min-height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0 0.88rem;
+  background: #fff;
+  color: var(--ink);
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.copy-text {
+  color: var(--muted-strong);
+  line-height: 1.72;
+  white-space: pre-line;
+}
+
+.download-card {
+  color: var(--ink);
+}
+
+.download-card[href]:hover,
+.social-card[href]:hover {
+  transform: translateY(-2px);
+}
+
+.fact-grid {
+  padding: 0;
+  list-style: none;
+}
+
+.fact-grid li {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--muted-strong);
+  line-height: 1.5;
+}
+
+.quote-card {
+  padding: 1.1rem;
+  color: var(--muted-strong);
+  font-size: 1.06rem;
+  line-height: 1.65;
+}
+
 .legal-main .section-pad {
   padding: 78px 0;
 }
@@ -1987,8 +2307,8 @@ summary:focus-visible,
 
   .nav-links a {
     min-height: 36px;
-    padding: 0 0.58rem;
-    font-size: 0.82rem;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
     white-space: nowrap;
   }
 
@@ -2073,6 +2393,11 @@ summary:focus-visible,
   .proof-grid,
   .feature-grid,
   .feature-showcase-grid,
+  .public-grid,
+  .social-card-grid,
+  .download-grid,
+  .quote-grid,
+  .fact-grid,
   .story-grid,
   .support-grid,
   .footer-grid {
@@ -2288,6 +2613,22 @@ summary:focus-visible,
   .footer-socials {
     justify-items: start;
   }
+
+  .email-capture {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    width: auto;
+  }
+
+  .email-capture-card {
+    padding: 1rem;
+    border-radius: 20px;
+  }
+
+  .email-capture h2 {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 420px) {
@@ -2320,6 +2661,11 @@ summary:focus-visible,
 
   .hero-note {
     max-width: 178px;
+  }
+
+  .nav-links a {
+    padding: 0 0.43rem;
+    font-size: 0.76rem;
   }
 }
 

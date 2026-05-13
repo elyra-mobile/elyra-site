@@ -5,7 +5,7 @@
 >
   <url>
     <loc>https://elyra-app.com/</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://elyra-app.com/index-en.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/" />
@@ -108,5 +108,33 @@
     <lastmod>2026-05-06</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/journal-entrainement-iphone" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/journal-entrainement-iphone" />
+  </url>
+  <url>
+    <loc>https://elyra-app.com/build-in-public</loc>
+    <lastmod>2026-05-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/build-in-public" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elyra-app.com/build-in-public-en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/build-in-public" />
+  </url>
+  <url>
+    <loc>https://elyra-app.com/build-in-public-en</loc>
+    <lastmod>2026-05-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elyra-app.com/build-in-public-en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/build-in-public" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/build-in-public" />
+  </url>
+  <url>
+    <loc>https://elyra-app.com/presse</loc>
+    <lastmod>2026-05-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/presse" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elyra-app.com/press" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/presse" />
+  </url>
+  <url>
+    <loc>https://elyra-app.com/press</loc>
+    <lastmod>2026-05-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elyra-app.com/press" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elyra-app.com/presse" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elyra-app.com/presse" />
   </url>
 </urlset>

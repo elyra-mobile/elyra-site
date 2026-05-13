@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Photo du fondateur à ajouter">
+  <rect width="1200" height="800" rx="48" fill="#080d16"/>
+  <circle cx="600" cy="310" r="92" fill="#cfe9df"/>
+  <path d="M390 628c40-118 120-178 210-178s170 60 210 178" fill="#cfe9df" opacity=".88"/>
+  <text x="600" y="710" text-anchor="middle" fill="#ffffff" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="42" font-weight="800">Photo fondateur placeholder</text>
+</svg>
