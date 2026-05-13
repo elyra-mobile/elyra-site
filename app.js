@@ -1,7 +1,5 @@
 (() => {
-  // TODO: replace this with your Brevo or MailerLite form/API endpoint.
-  const EMAIL_CAPTURE_ENDPOINT = "https://REPLACE_WITH_BREVO_OR_MAILERLITE_ENDPOINT";
-  const EMAIL_CAPTURE_ENDPOINT_PLACEHOLDER = "REPLACE_WITH_BREVO_OR_MAILERLITE_ENDPOINT";
+  const EMAIL_CAPTURE_ENDPOINT = "/api/subscribe";
   const EMAIL_CAPTURE_DELAY_MS = new URLSearchParams(window.location.search).has("previewEmailPopup")
     ? 800
     : 30000;
@@ -243,11 +241,6 @@
       if (!emailInput || !emailInput.value.trim()) return;
 
       setStatus(form.getAttribute("data-loading-message") || "Envoi en cours...");
-
-      if (EMAIL_CAPTURE_ENDPOINT.includes(EMAIL_CAPTURE_ENDPOINT_PLACEHOLDER)) {
-        setStatus(form.getAttribute("data-missing-endpoint-message") || "Endpoint email à configurer.", "error");
-        return;
-      }
 
       try {
         const response = await fetch(EMAIL_CAPTURE_ENDPOINT, {
