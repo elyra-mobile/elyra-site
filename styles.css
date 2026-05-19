@@ -3611,13 +3611,13 @@ body.has-scrolled .site-header .nav {
   }
 
   .site-header {
-    position: sticky;
-    top: 0;
+    position: relative;
+    top: auto;
     padding: max(8px, env(safe-area-inset-top)) 10px 0;
     background: transparent;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
-    transform: translate3d(0, 0, 0);
+    transform: none;
     backface-visibility: hidden;
     isolation: isolate;
   }

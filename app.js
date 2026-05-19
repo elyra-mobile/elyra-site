@@ -23,7 +23,11 @@
     const anchor =
       target.querySelector?.(".section-heading, .section-copy, .legal-hero-grid") || target;
     const header = document.querySelector(".site-header");
-    const headerHeight = header ? header.getBoundingClientRect().height : 0;
+    const headerPosition = header ? window.getComputedStyle(header).position : "";
+    const headerHeight =
+      header && (headerPosition === "sticky" || headerPosition === "fixed")
+        ? header.getBoundingClientRect().height
+        : 0;
     const top = window.scrollY + anchor.getBoundingClientRect().top - headerHeight - 42;
     window.scrollTo({ top: Math.max(0, top), behavior: "auto" });
   };
