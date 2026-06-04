@@ -5,6 +5,9 @@
     : 30000;
   const EMAIL_CAPTURE_DISMISS_DAYS = 7;
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const isTouchViewport = window.matchMedia(
+    "(hover: none), (pointer: coarse), (max-width: 760px)"
+  ).matches;
   const revealItems = Array.from(document.querySelectorAll(".reveal"));
   let observer;
   let scrollTicking = false;
@@ -40,7 +43,7 @@
   };
 
   const keepHashAlignedWhileMediaLoads = () => {
-    if (!window.location.hash) return;
+    if (!window.location.hash || isTouchViewport) return;
     hashAlignUntil = Date.now() + 3200;
 
     document.querySelectorAll("img").forEach((image) => {
@@ -290,7 +293,7 @@
 
     updateScrolledState();
 
-    if (reduceMotion) {
+    if (reduceMotion || isTouchViewport) {
       window.addEventListener("scroll", updateScrolledState, { passive: true });
       return;
     }
@@ -403,16 +406,20 @@
   window.addEventListener("hashchange", () => {
     keepHashAlignedWhileMediaLoads();
     scheduleHashAlign();
-    scheduleHashAlign(240);
-    scheduleHashAlign(900);
+    if (!isTouchViewport) {
+      scheduleHashAlign(240);
+      scheduleHashAlign(900);
+    }
   });
 
   window.addEventListener("load", () => {
     keepHashAlignedWhileMediaLoads();
     scheduleHashAlign();
-    scheduleHashAlign(180);
-    scheduleHashAlign(720);
-    scheduleHashAlign(1600);
-    scheduleHashAlign(2800);
+    if (!isTouchViewport) {
+      scheduleHashAlign(180);
+      scheduleHashAlign(720);
+      scheduleHashAlign(1600);
+      scheduleHashAlign(2800);
+    }
   });
 })();

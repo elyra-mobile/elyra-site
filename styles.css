@@ -4207,6 +4207,63 @@ body.has-scrolled .site-header .nav {
   }
 }
 
+@media (max-width: 760px) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    touch-action: pan-y;
+  }
+
+  .js .reveal,
+  .js .reveal.is-visible {
+    filter: none;
+    transform: none;
+    transition: opacity 260ms ease;
+  }
+
+  .hero-product-card,
+  .nutrition-device,
+  .story-visual,
+  .progress-phone,
+  .signature-phone,
+  .feature-showcase-phone,
+  .release-media {
+    transform: none !important;
+    transform-style: flat;
+    will-change: auto;
+  }
+
+  .hero-showcase::before,
+  .hero-grid::after,
+  .nutrition-layout::after,
+  .story-grid::after,
+  .progress-layout::after,
+  .signature-card-featured::after,
+  .final-cta-inner::after {
+    animation: none !important;
+  }
+
+  .nutrition-layout .feature-card::after,
+  .story-item::after,
+  .feature-showcase-card::after,
+  .signature-card::after,
+  .why-item::after,
+  .faq-list details::after,
+  .final-cta-inner::after {
+    transition: none;
+  }
+
+  .release-note,
+  .progress-stats div,
+  .social-bubble,
+  .footer-socials {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-showcase::before,
   .hero-grid::after,
