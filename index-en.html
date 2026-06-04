@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Elyra brings nutrition, training, hydration, supplements, community, and progress tracking into one clear iPhone app that is quick to use."
+      content="Elyra brings nutrition, training, HealthKit steps, Live Activity, hydration, supplements, community, and progress tracking into one clear iPhone app."
     />
     <meta name="theme-color" content="#080d16" />
     <meta name="robots" content="index, follow" />
@@ -19,7 +19,7 @@
     <meta property="og:title" content="Elyra - Fitness app for iPhone" />
     <meta
       property="og:description"
-      content="Nutrition, training, hydration, supplements, community, and progress tracking in one clear iPhone app."
+      content="Nutrition, training, HealthKit steps, Live Activity, supplements, community, and progress tracking in one clear iPhone app."
     />
     <meta property="og:url" content="https://elyra-app.com/index-en.html" />
     <meta property="og:image" content="https://elyra-app.com/assets/og/elyra-og.png" />
@@ -32,11 +32,11 @@
     <meta name="twitter:title" content="Elyra - Fitness app for iPhone" />
     <meta
       name="twitter:description"
-      content="Nutrition, training, hydration, supplements, community, and progress tracking in one clear iPhone app."
+      content="Nutrition, training, HealthKit steps, Live Activity, supplements, community, and progress tracking in one clear iPhone app."
     />
     <meta name="twitter:image" content="https://elyra-app.com/assets/og/elyra-og.png" />
 
-    <title>Elyra - Fitness app for iPhone</title>
+    <title>Elyra - V1.1 fitness app for iPhone</title>
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="icon" href="favicon-48x48.png" sizes="48x48" type="image/png" />
@@ -47,7 +47,7 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="preload" as="image" href="assets/brand/elyra-app-icon.png" />
     <link rel="preload" as="image" href="assets/screenshots/en/home.png" />
-    <link rel="stylesheet" href="styles.css?v=20260513-3" />
+    <link rel="stylesheet" href="styles.css?v=20260604-1" />
     <script>
       document.documentElement.classList.add("js");
     </script>
@@ -58,7 +58,7 @@
         "name": "Elyra",
         "applicationCategory": "HealthApplication",
         "operatingSystem": "iOS",
-        "description": "Elyra brings nutrition, training, community workouts, supplements, hydration, and progress tracking together in one clear iPhone experience.",
+        "description": "Elyra brings nutrition, training, Live Activity rest timers, HealthKit steps, community posts, supplements, hydration, and progress tracking together in one clear iPhone experience.",
         "image": "https://elyra-app.com/assets/og/elyra-og.png",
         "url": "https://elyra-app.com/index-en.html",
         "offers": {
@@ -139,8 +139,9 @@
               <p class="eyebrow">Fitness app for iPhone</p>
               <h1>Three apps in one.</h1>
               <p class="hero-text">
-                Elyra brings nutrition, training, hydration, supplements, and
-                community into one clear iPhone app that is quick to use.
+                Elyra brings nutrition, training, hydration, supplements,
+                HealthKit steps, and community into one clear iPhone app that is
+                quick to use.
               </p>
               <div class="hero-actions" aria-label="Primary actions">
                 <a class="button button-primary button-app-store" href="https://apps.apple.com/fr/app/elyra/id6761819130" target="_blank" rel="noopener noreferrer"><svg class="button-apple-icon" aria-hidden="true" viewBox="0 0 384 512" focusable="false"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-85.3-44.6-36.1-2.8-75.6 21.1-90 21.1-15.2 0-50-20.1-77.5-19.5-39.9.6-76.7 23.2-97.2 59-41.4 71.8-10.6 178.1 29.8 236.6 19.7 28.5 43.2 60.5 74.1 59.3 29.7-1.2 40.9-19.2 76.8-19.2 35.8 0 46 19.2 77.5 18.6 32-.6 52.3-29.1 71.9-57.7 22.6-33 31.9-65 32.4-66.6-.7-.3-62.2-23.8-62.5-94.2zM260.4 101.2c16.4-19.9 27.5-47.5 24.5-75-23.6.9-52.2 15.7-69.2 35.6-15.2 17.6-28.5 45.7-24.9 72.6 26.3 2 53.2-13.4 69.6-33.2z" /></svg><span>Download for free</span></a>
@@ -148,7 +149,8 @@
               <ul class="trust-list" aria-label="Trust points">
                 <li>Clear nutrition</li>
                 <li>Structured training</li>
-                <li>Community</li>
+                <li>HealthKit steps</li>
+                <li>Live Activity</li>
                 <li>Supplements</li>
               </ul>
               <div class="social-follow" aria-label="Elyra social channels">
@@ -204,11 +206,11 @@
                   </p>
                 </article>
                 <article class="feature-card reveal">
-                  <span class="feature-kicker">Fast lookup</span>
-                  <h3>Foods are easier to add.</h3>
+                  <span class="feature-kicker">Improved search</span>
+                  <h3>Find foods faster.</h3>
                   <p>
-                    Search, scan, and add meals faster, with useful information in
-                    the right place.
+                    Manual food search is more direct, easier to read, and
+                    simpler to use when you add meals.
                   </p>
                 </article>
               </div>
@@ -319,7 +321,7 @@
                 <article class="story-item reveal">
                   <span>02</span>
                   <h3>Track during the workout</h3>
-                  <p>Sets, weights, and rest times stay visible while you train.</p>
+                  <p>Sets, weights, and rest stay visible, with Live Activity when the timer is running.</p>
                 </article>
                 <article class="story-item reveal">
                   <span>03</span>
@@ -394,13 +396,100 @@
           </div>
         </section>
 
+        <section class="product-section release-section section-pad" id="v11" aria-labelledby="release-title">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">New in V1.1</p>
+              <h2 id="release-title">More tracking, even when the app is closed.</h2>
+              <p>
+                V1.1 adds Live Activity rest timers, HealthKit step tracking, a
+                public community feed, and a cleaner manual food search.
+              </p>
+            </div>
+
+            <div class="release-grid" aria-label="Elyra V1.1 features">
+              <article class="release-card release-card-dark release-card-wide reveal">
+                <div class="release-copy">
+                  <span class="feature-kicker">Live Activity</span>
+                  <h3>Your rest timer stays visible.</h3>
+                  <p>
+                    Start a workout, follow rest from the Lock Screen, and move
+                    to the next set without reopening the app every time.
+                  </p>
+                  <ul class="signature-points" aria-label="Live Activity points">
+                    <li>Rest timer</li>
+                    <li>Lock Screen</li>
+                    <li>Active workout</li>
+                  </ul>
+                </div>
+                <figure class="release-media release-media-lock">
+                  <img
+                    src="assets/screenshots/en/live-activity-v11.jpg"
+                    alt="Preview of the Elyra Live Activity rest timer on the Lock Screen."
+                    width="585"
+                    height="1280"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </article>
+
+              <article class="release-card reveal">
+                <div class="release-copy">
+                  <span class="feature-kicker">HealthKit</span>
+                  <h3>Your steps become part of progress.</h3>
+                  <p>
+                    Elyra can show your steps, daily goal, and last seven days
+                    when you grant Health access.
+                  </p>
+                </div>
+                <figure class="release-media release-media-phone">
+                  <img
+                    src="assets/screenshots/en/steps-v11.jpg"
+                    alt="Preview of HealthKit step tracking in Elyra."
+                    width="585"
+                    height="1280"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </article>
+
+              <article class="release-card reveal">
+                <div class="release-copy">
+                  <span class="feature-kicker">Community</span>
+                  <h3>A public feed for records and workouts.</h3>
+                  <p>
+                    Publish a record, completed workout, or progress update, then
+                    keep reactions and filters in the same place.
+                  </p>
+                </div>
+                <figure class="release-media release-media-phone">
+                  <img
+                    src="assets/screenshots/en/community-v11.jpg"
+                    alt="Preview of the Elyra community feed with posts, records, and reactions."
+                    width="585"
+                    height="1280"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </article>
+            </div>
+            <p class="release-note reveal">
+              V1.1 also includes several bug fixes and optimizations for a more
+              stable and faster everyday experience.
+            </p>
+          </div>
+        </section>
+
         <section class="product-section section-pad" id="progress">
           <div class="container">
             <div class="section-heading reveal">
               <p class="eyebrow">Progress</p>
               <h2>Progress that stays easy to read.</h2>
               <p>
-                Weight, goals, workouts, and hydration stay together so you can
+                Weight, goals, workouts, steps, and hydration stay together so you can
                 follow what is changing day after day.
               </p>
             </div>
@@ -409,8 +498,9 @@
                 <span class="feature-kicker">Personal tracking</span>
                 <h3>Keep track of your progress.</h3>
                 <p>
-                  Elyra brings your measurements and history together so you can
-                  spot trends, adjust goals, and stay motivated.
+                  Elyra brings your measurements, HealthKit steps, and history
+                  together so you can spot trends, adjust goals, and stay
+                  motivated.
                 </p>
                 <dl class="progress-stats" aria-label="Tracked items">
                   <div>
@@ -424,6 +514,10 @@
                   <div>
                     <dt>Hydration</dt>
                     <dd>Daily tracking</dd>
+                  </div>
+                  <div>
+                    <dt>Steps</dt>
+                    <dd>HealthKit if allowed</dd>
                   </div>
                 </dl>
               </div>
@@ -439,7 +533,7 @@
               </figure>
             </div>
 
-            <div class="feature-showcase-grid progress-more" aria-label="Hydration feature">
+            <div class="feature-showcase-grid progress-more" aria-label="Progress features">
               <article class="feature-showcase-card feature-showcase-card-wide reveal">
                 <div class="feature-showcase-copy">
                   <span class="feature-kicker">Hydration</span>
@@ -460,6 +554,26 @@
                   />
                 </figure>
               </article>
+              <article class="feature-showcase-card feature-showcase-card-wide reveal">
+                <div class="feature-showcase-copy">
+                  <span class="feature-kicker">HealthKit steps</span>
+                  <h3>Add daily activity to your routine.</h3>
+                  <p>
+                    Steps, distance, estimated calories, and the daily goal
+                    complete your progress without adding another tool.
+                  </p>
+                </div>
+                <figure class="feature-showcase-phone feature-showcase-phone-large">
+                  <img
+                    src="assets/screenshots/en/steps-v11.jpg"
+                    alt="Preview of step tracking in Elyra."
+                    width="585"
+                    height="1280"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </article>
             </div>
           </div>
         </section>
@@ -470,8 +584,8 @@
               <p class="eyebrow">Elyra features</p>
               <h2>Tools that make Elyra feel different.</h2>
               <p>
-                Elyra goes beyond basic tracking: shared workouts, per-side
-                training, and supplements all live in the same app.
+                Elyra goes beyond basic tracking: public posts, per-side
+                training, supplements, and progress all live in the same app.
               </p>
             </div>
 
@@ -479,24 +593,25 @@
               <article class="signature-card signature-card-featured reveal">
                 <div class="signature-copy">
                   <span class="feature-kicker">Community</span>
-                  <h3>Shared workouts, ready to import.</h3>
+                  <h3>A public feed for workouts, records, and progress.</h3>
                   <p>
-                    Find your Elyra friends, publish workouts, and import
-                    sessions that fit your training without rebuilding them by
-                    hand.
+                    Publish completed workouts, personal records, and progress
+                    updates. Reactions and filters keep the community readable,
+                    like an Elyra activity log.
                   </p>
                   <ul class="signature-points" aria-label="Community points">
-                    <li>Workout feed</li>
-                    <li>Private sharing</li>
-                    <li>Quick import</li>
+                    <li>Public posts</li>
+                    <li>Personal records</li>
+                    <li>Reactions</li>
+                    <li>Filters</li>
                   </ul>
                 </div>
                 <figure class="signature-phone">
                   <img
-                    src="assets/screenshots/en/community.png"
-                    alt="Preview of Elyra community workout sharing."
-                    width="1320"
-                    height="2740"
+                    src="assets/screenshots/en/community-v11.jpg"
+                    alt="Preview of the new Elyra community feed with records, workouts, and reactions."
+                    width="585"
+                    height="1280"
                     loading="lazy"
                     decoding="async"
                   />
@@ -565,8 +680,8 @@
               <article class="why-item reveal">
                 <h3>Complete without feeling heavy</h3>
                 <p>
-                  Nutrition, training, community, supplements, and progress stay
-                  together without making tracking feel heavier.
+                  Nutrition, training, HealthKit steps, community, supplements,
+                  and progress stay together without making tracking feel heavier.
                 </p>
               </article>
               <article class="why-item reveal">
@@ -607,9 +722,9 @@
                 <summary>What data can the app store?</summary>
                 <p>
                   Account data and information added inside the app, such as
-                  nutrition, training, community, supplements, progress,
-                  hydration, and profile details. The privacy policy explains
-                  those points in more detail.
+                  nutrition, training, HealthKit steps if allowed, community,
+                  supplements, progress, hydration, and profile details. The
+                  privacy policy explains those points in more detail.
                 </p>
               </details>
               <details>
@@ -629,9 +744,9 @@
             <p class="eyebrow">Elyra on iPhone</p>
             <h2>A simpler routine starts with a clearer app.</h2>
             <p>
-              Elyra brings nutrition, training, community, supplements, and
-              progress together so tracking your fitness does not become another
-              chore.
+              Elyra brings nutrition, training, HealthKit steps, community,
+              supplements, and progress together so tracking your fitness does
+              not become another chore.
             </p>
             <div class="hero-actions">
               <a class="button button-primary button-app-store" href="https://apps.apple.com/fr/app/elyra/id6761819130" target="_blank" rel="noopener noreferrer"><svg class="button-apple-icon" aria-hidden="true" viewBox="0 0 384 512" focusable="false"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-85.3-44.6-36.1-2.8-75.6 21.1-90 21.1-15.2 0-50-20.1-77.5-19.5-39.9.6-76.7 23.2-97.2 59-41.4 71.8-10.6 178.1 29.8 236.6 19.7 28.5 43.2 60.5 74.1 59.3 29.7-1.2 40.9-19.2 76.8-19.2 35.8 0 46 19.2 77.5 18.6 32-.6 52.3-29.1 71.9-57.7 22.6-33 31.9-65 32.4-66.6-.7-.3-62.2-23.8-62.5-94.2zM260.4 101.2c16.4-19.9 27.5-47.5 24.5-75-23.6.9-52.2 15.7-69.2 35.6-15.2 17.6-28.5 45.7-24.9 72.6 26.3 2 53.2-13.4 69.6-33.2z" /></svg><span>Download for free</span></a>
@@ -649,8 +764,8 @@
               <span>Elyra</span>
             </a>
             <p class="footer-note">
-              Fitness app for iPhone. Nutrition, training, community,
-              supplements, and progress in one clear experience.
+              Fitness app for iPhone. Nutrition, training, HealthKit steps,
+              community, supplements, and progress in one clear experience.
             </p>
           </div>
           <nav class="footer-links" aria-label="Public pages">
@@ -663,7 +778,7 @@
           </nav>
           <div class="footer-contact">
             <a href="mailto:support.elyra@gmail.com">support.elyra@gmail.com</a>
-            <span>Last updated: May 13, 2026</span>
+            <span>Last updated: June 4, 2026</span>
             <div class="footer-socials" aria-label="Elyra social channels">
               <span>Social</span>
               <div class="social-bubbles">
@@ -679,21 +794,21 @@
         </div>
       </footer>
     </div>
-    <div class="email-capture" data-email-capture data-language="en" data-storage-key="elyra-v11-email-popup-20260513" role="dialog" aria-modal="false" aria-labelledby="email-capture-title-en" aria-describedby="email-capture-desc-en" hidden>
+    <div class="email-capture" data-email-capture data-language="en" data-storage-key="elyra-updates-email-popup-20260604" role="dialog" aria-modal="false" aria-labelledby="email-capture-title-en" aria-describedby="email-capture-desc-en" hidden>
       <div class="email-capture-card">
         <button class="email-capture-close" type="button" data-email-close aria-label="Close">×</button>
-        <h2 id="email-capture-title-en">Get V1.1 early access</h2>
-        <p id="email-capture-desc-en">AI Coach, meal photo recognition. Be the first to know when it launches.</p>
+        <h2 id="email-capture-title-en">Get the next Elyra updates</h2>
+        <p id="email-capture-desc-en">V1.1 is available: Live Activity, HealthKit steps, and the new community feed. Follow the next releases.</p>
         <form class="email-capture-form" data-email-form data-loading-message="Sending..." data-success-message="Thanks, you will be notified." data-error-message="Email signup is unavailable for now." data-missing-endpoint-message="Email endpoint must be configured in app.js.">
           <label class="sr-only" for="email-capture-email-en">Email</label>
           <input class="email-capture-field" id="email-capture-email-en" type="email" name="email" placeholder="your@email.com" autocomplete="email" required />
-          <button class="button button-primary" type="submit">Notify me</button>
+          <button class="button button-primary" type="submit">Keep me updated</button>
           <p class="email-capture-status" data-email-status role="status" aria-live="polite"></p>
         </form>
         <p class="email-capture-note">No spam, max 1 email per month.</p>
       </div>
     </div>
 
-    <script src="app.js?v=20260513-3" defer></script>
+    <script src="app.js?v=20260604-1" defer></script>
   </body>
 </html>

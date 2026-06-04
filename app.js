@@ -305,6 +305,7 @@
           ".story-grid",
           ".progress-layout",
           ".signature-card",
+          ".release-card",
           ".feature-card",
           ".feature-showcase-card",
           ".why-item",
@@ -352,7 +353,7 @@
 
     const floatItems = Array.from(
       document.querySelectorAll(
-        ".hero-product-card, .nutrition-device, .story-visual, .progress-phone, .signature-phone, .feature-showcase-phone"
+        ".hero-product-card, .nutrition-device, .story-visual, .progress-phone, .signature-phone, .feature-showcase-phone, .release-media"
       )
     ).map((element, index) => ({
       element,
