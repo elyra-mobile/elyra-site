@@ -8,6 +8,9 @@
   const isTouchViewport = window.matchMedia(
     "(hover: none), (pointer: coarse), (max-width: 760px)"
   ).matches;
+  const isSafari = /^((?!chrome|android|crios|fxios|edg|opr).)*safari/i.test(
+    window.navigator.userAgent
+  );
   const revealItems = Array.from(document.querySelectorAll(".reveal"));
   let observer;
   let scrollTicking = false;
@@ -287,8 +290,12 @@
 
   const setupPremiumMotion = () => {
     const root = document.documentElement;
+    let lastScrolledState = null;
     const updateScrolledState = () => {
-      document.body.classList.toggle("has-scrolled", window.scrollY > 10);
+      const nextScrolledState = window.scrollY > 10;
+      if (nextScrolledState === lastScrolledState) return;
+      lastScrolledState = nextScrolledState;
+      document.body.classList.toggle("has-scrolled", nextScrolledState);
     };
 
     updateScrolledState();
@@ -354,6 +361,11 @@
       });
     }
 
+    if (isSafari) {
+      window.addEventListener("scroll", updateScrolledState, { passive: true });
+      return;
+    }
+
     const floatItems = Array.from(
       document.querySelectorAll(
         ".hero-product-card, .nutrition-device, .story-visual, .progress-phone, .signature-phone, .feature-showcase-phone, .release-media"
@@ -367,9 +379,6 @@
     const updateMotion = () => {
       motionFrame = 0;
       updateScrolledState();
-
-      const pageHeight = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-      root.style.setProperty("--scroll-progress", (window.scrollY / pageHeight).toFixed(4));
 
       if (window.innerWidth <= 760) {
         floatItems.forEach(({ element }) => {

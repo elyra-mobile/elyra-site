@@ -2972,10 +2972,13 @@ body::after {
 }
 
 .site-header {
-  top: 12px;
+  top: 0;
+  padding-top: 12px;
   border-bottom: 0;
   background: transparent;
   backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  isolation: isolate;
 }
 
 .site-header .nav {
@@ -2984,17 +2987,20 @@ body::after {
   border: 1px solid rgba(17, 21, 28, 0.08);
   border-radius: 999px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.68));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(250, 252, 249, 0.9));
   box-shadow:
     0 22px 70px rgba(17, 21, 28, 0.11),
     inset 0 1px 0 rgba(255, 255, 255, 0.84);
-  backdrop-filter: blur(26px) saturate(1.25);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 body.has-scrolled .site-header .nav {
   box-shadow:
-    0 16px 48px rgba(17, 21, 28, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.88);
+    0 22px 70px rgba(17, 21, 28, 0.11),
+    inset 0 1px 0 rgba(255, 255, 255, 0.84);
 }
 
 .brand {
