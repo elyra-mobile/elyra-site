@@ -8,9 +8,6 @@
   const isTouchViewport = window.matchMedia(
     "(hover: none), (pointer: coarse), (max-width: 760px)"
   ).matches;
-  const isSafari = /^((?!chrome|android|crios|fxios|edg|opr).)*safari/i.test(
-    window.navigator.userAgent
-  );
   const revealItems = Array.from(document.querySelectorAll(".reveal"));
   let observer;
   let scrollTicking = false;
@@ -289,7 +286,6 @@
   };
 
   const setupPremiumMotion = () => {
-    const root = document.documentElement;
     let lastScrolledState = null;
     const updateScrolledState = () => {
       const nextScrolledState = window.scrollY > 10;
@@ -299,113 +295,7 @@
     };
 
     updateScrolledState();
-
-    if (reduceMotion || isTouchViewport) {
-      window.addEventListener("scroll", updateScrolledState, { passive: true });
-      return;
-    }
-
-    root.classList.add("motion-live");
-
-    const spotlightItems = Array.from(
-      document.querySelectorAll(
-        [
-          ".hero-grid",
-          ".nutrition-layout",
-          ".story-grid",
-          ".progress-layout",
-          ".signature-card",
-          ".release-card",
-          ".feature-card",
-          ".feature-showcase-card",
-          ".why-item",
-          ".faq-list details",
-          ".final-cta-inner",
-          ".email-capture-card",
-        ].join(",")
-      )
-    );
-
-    spotlightItems.forEach((item) => {
-      item.addEventListener(
-        "pointermove",
-        (event) => {
-          const rect = item.getBoundingClientRect();
-          const x = ((event.clientX - rect.left) / rect.width) * 100;
-          const y = ((event.clientY - rect.top) / rect.height) * 100;
-          item.style.setProperty("--spot-x", `${x.toFixed(2)}%`);
-          item.style.setProperty("--spot-y", `${y.toFixed(2)}%`);
-        },
-        { passive: true }
-      );
-    });
-
-    const heroGrid = document.querySelector(".hero-grid");
-    const heroCard = document.querySelector(".hero-product-card");
-    if (heroGrid && heroCard) {
-      heroGrid.addEventListener(
-        "pointermove",
-        (event) => {
-          const rect = heroGrid.getBoundingClientRect();
-          const x = (event.clientX - rect.left) / rect.width - 0.5;
-          const y = (event.clientY - rect.top) / rect.height - 0.5;
-          heroCard.style.setProperty("--tilt-x", `${(-y * 5).toFixed(2)}deg`);
-          heroCard.style.setProperty("--tilt-y", `${(x * 7).toFixed(2)}deg`);
-        },
-        { passive: true }
-      );
-
-      heroGrid.addEventListener("pointerleave", () => {
-        heroCard.style.setProperty("--tilt-x", "0deg");
-        heroCard.style.setProperty("--tilt-y", "0deg");
-      });
-    }
-
-    if (isSafari) {
-      window.addEventListener("scroll", updateScrolledState, { passive: true });
-      return;
-    }
-
-    const floatItems = Array.from(
-      document.querySelectorAll(
-        ".hero-product-card, .nutrition-device, .story-visual, .progress-phone, .signature-phone, .feature-showcase-phone, .release-media"
-      )
-    ).map((element, index) => ({
-      element,
-      depth: 6 + (index % 4) * 2,
-    }));
-
-    let motionFrame = 0;
-    const updateMotion = () => {
-      motionFrame = 0;
-      updateScrolledState();
-
-      if (window.innerWidth <= 760) {
-        floatItems.forEach(({ element }) => {
-          element.style.setProperty("--float-y", "0px");
-        });
-        return;
-      }
-
-      const viewportCenter = window.innerHeight / 2;
-      floatItems.forEach(({ element, depth }) => {
-        const rect = element.getBoundingClientRect();
-        if (rect.bottom < -120 || rect.top > window.innerHeight + 120) return;
-        const itemCenter = rect.top + rect.height / 2;
-        const progress = (viewportCenter - itemCenter) / viewportCenter;
-        const y = Math.max(-depth, Math.min(depth, progress * depth));
-        element.style.setProperty("--float-y", `${y.toFixed(2)}px`);
-      });
-    };
-
-    const scheduleMotion = () => {
-      if (motionFrame) return;
-      motionFrame = window.requestAnimationFrame(updateMotion);
-    };
-
-    window.addEventListener("scroll", scheduleMotion, { passive: true });
-    window.addEventListener("resize", scheduleMotion);
-    updateMotion();
+    window.addEventListener("scroll", updateScrolledState, { passive: true });
   };
 
   setupCopyButtons();

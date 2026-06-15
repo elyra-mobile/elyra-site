@@ -5,3 +5,7 @@ package-lock.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Keep the original design exports locally; the site ships optimized WebP files.
+assets/screenshots/*.PNG
+assets/screenshots/*.png
