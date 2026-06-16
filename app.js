@@ -285,6 +285,89 @@
     });
   };
 
+  const setupSeoCalculators = () => {
+    const formatNumber = (value) =>
+      new Intl.NumberFormat("fr-FR", {
+        maximumFractionDigits: 0,
+      }).format(value);
+
+    const getNumber = (form, name) => Number(form.elements[name]?.value || 0);
+
+    const getBmr = (form) => {
+      const weight = getNumber(form, "weight");
+      const height = getNumber(form, "height");
+      const age = getNumber(form, "age");
+      const sex = form.elements.sex?.value || "male";
+      const base = 10 * weight + 6.25 * height - 5 * age;
+      return sex === "female" ? base - 161 : base + 5;
+    };
+
+    const renderResult = (output, html) => {
+      if (!output) return;
+      output.innerHTML = html;
+      output.classList.add("is-visible");
+    };
+
+    document.querySelectorAll("[data-calculator]").forEach((form) => {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const output = form.querySelector(".calculator-result");
+        const type = form.getAttribute("data-calculator");
+
+        if (type === "one-rm") {
+          const weight = getNumber(form, "weight");
+          const reps = Math.max(1, getNumber(form, "reps"));
+          const oneRm = reps === 1 ? weight : weight * (1 + reps / 30);
+          const trainingMax = oneRm * 0.9;
+          renderResult(
+            output,
+            `<strong>${formatNumber(oneRm)} kg estimés</strong>
+            <dl>
+              <div><dt>Training max</dt><dd>${formatNumber(trainingMax)} kg</dd></div>
+              <div><dt>5 reps</dt><dd>${formatNumber(oneRm * 0.86)} kg</dd></div>
+              <div><dt>8 reps</dt><dd>${formatNumber(oneRm * 0.8)} kg</dd></div>
+            </dl>`
+          );
+          return;
+        }
+
+        const activity = Number(form.elements.activity?.value || 1.55);
+        const maintenance = getBmr(form) * activity;
+
+        if (type === "calories") {
+          renderResult(
+            output,
+            `<strong>${formatNumber(maintenance)} kcal / jour</strong>
+            <dl>
+              <div><dt>Sèche douce</dt><dd>${formatNumber(maintenance - 300)} kcal</dd></div>
+              <div><dt>Maintien</dt><dd>${formatNumber(maintenance)} kcal</dd></div>
+              <div><dt>Masse contrôlée</dt><dd>${formatNumber(maintenance + 250)} kcal</dd></div>
+            </dl>`
+          );
+          return;
+        }
+
+        if (type === "macro") {
+          const weight = getNumber(form, "weight");
+          const goalDelta = Number(form.elements.goal?.value || 0);
+          const calories = Math.max(1200, maintenance + goalDelta);
+          const protein = Math.round(weight * 2);
+          const fats = Math.round(weight * 0.9);
+          const carbs = Math.max(0, Math.round((calories - protein * 4 - fats * 9) / 4));
+          renderResult(
+            output,
+            `<strong>${formatNumber(calories)} kcal / jour</strong>
+            <dl>
+              <div><dt>Protéines</dt><dd>${formatNumber(protein)} g</dd></div>
+              <div><dt>Glucides</dt><dd>${formatNumber(carbs)} g</dd></div>
+              <div><dt>Lipides</dt><dd>${formatNumber(fats)} g</dd></div>
+            </dl>`
+          );
+        }
+      });
+    });
+  };
+
   const setupPremiumMotion = () => {
     let lastScrolledState = null;
     const updateScrolledState = () => {
@@ -300,6 +383,7 @@
 
   setupCopyButtons();
   setupEmailCapture();
+  setupSeoCalculators();
   setupPremiumMotion();
 
   window.addEventListener("hashchange", () => {
