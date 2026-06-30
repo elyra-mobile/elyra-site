@@ -1,0 +1,57 @@
+# Elyra
+
+> Elyra is an iPhone fitness app that brings nutrition, strength training, hydration, supplements, HealthKit steps, Live Activity rest timers, community posts and progress tracking into one clear mobile experience.
+
+Official website: https://elyra-app.com/  
+App Store: https://apps.apple.com/fr/app/elyra/id6761819130  
+Support: support.elyra@gmail.com  
+Last updated: 2026-06-30
+
+## Product
+
+- Free iOS fitness app for people who train in the gym and want one place for nutrition, workouts and progress.
+- Main features: calorie and macro tracking, workout journal, exercise library, unilateral tracking, supplements, hydration, HealthKit steps, Live Activity rest timer, community feed and progress records.
+- Current version promoted on the website: Elyra V1.1.
+- Primary audience: French-speaking strength training and fitness users. English pages are also available for product discovery.
+
+## Primary Pages
+
+- [Home FR](https://elyra-app.com/): French landing page for Elyra.
+- [Home EN](https://elyra-app.com/index-en.html): English landing page for Elyra.
+- [Resources FR](https://elyra-app.com/ressources): Resource hub with calculators, comparisons and fitness guides.
+- [Resources EN](https://elyra-app.com/resources): English resource hub.
+- [Support](https://elyra-app.com/support.html): Public support page.
+- [Privacy Policy](https://elyra-app.com/privacy.html): Privacy policy.
+- [Terms](https://elyra-app.com/terms.html): Terms of use.
+- [Account Deletion](https://elyra-app.com/delete-account.html): Account deletion instructions.
+
+## SEO Resource Pages
+
+- [Calculateur macros musculation](https://elyra-app.com/calculateur-macros)
+- [Calculateur calories de maintien](https://elyra-app.com/calculateur-calories-maintenance)
+- [Calculateur 1RM musculation](https://elyra-app.com/calculateur-1rm)
+- [Alternative MyFitnessPal](https://elyra-app.com/alternative-myfitnesspal)
+- [Alternative Strong / Hevy](https://elyra-app.com/alternative-strong-hevy)
+- [Application musculation iPhone](https://elyra-app.com/application-musculation-iphone)
+- [App calories musculation](https://elyra-app.com/app-calories-musculation)
+- [Journal entraînement iPhone](https://elyra-app.com/journal-entrainement-iphone)
+- [Temps de repos musculation](https://elyra-app.com/temps-repos-musculation)
+- [Live Activity musculation](https://elyra-app.com/live-activity-musculation)
+- [Application suivi des pas iPhone HealthKit](https://elyra-app.com/application-suivi-pas-iphone)
+- [Communauté musculation](https://elyra-app.com/application-communaute-musculation)
+- [Suivi progression musculation](https://elyra-app.com/suivi-progression-musculation)
+- [Suivi hydratation musculation](https://elyra-app.com/suivi-hydratation-musculation)
+- [Suivi compléments musculation](https://elyra-app.com/suivi-complements-musculation)
+
+## Brand and Social
+
+- TikTok: https://www.tiktok.com/@elyra.app
+- Instagram: https://www.instagram.com/elyra_app/
+- Press kit FR: https://elyra-app.com/presse
+- Press kit EN: https://elyra-app.com/press
+
+## More Context for AI Assistants
+
+For a longer machine-readable overview of the product, pages, positioning and public facts, read:
+
+- [llms-full.txt](https://elyra-app.com/llms-full.txt)

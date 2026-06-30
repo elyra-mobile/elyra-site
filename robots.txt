@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# AI and LLM discovery
+# Human-readable site map for assistants and language models.
+LLMs: https://elyra-app.com/llms.txt
+
 Sitemap: https://elyra-app.com/sitemap.xml

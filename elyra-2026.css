@@ -1702,18 +1702,63 @@ body.has-scrolled .site-header {
 }
 
 .seo-tool-section {
-  padding: clamp(26px, 4vw, 40px);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  gap: 22px;
+  padding: clamp(28px, 4.8vw, 52px);
+  color: #fff;
   background:
-    linear-gradient(135deg, rgba(232, 240, 255, 0.72), rgba(230, 248, 237, 0.74)),
-    var(--surface-soft);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
+    radial-gradient(circle at 88% 14%, rgba(54, 185, 109, 0.2), transparent 28%),
+    radial-gradient(circle at 8% 88%, rgba(66, 170, 167, 0.14), transparent 34%),
+    linear-gradient(145deg, #111720 0%, #1a222d 56%, #11161d 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  box-shadow:
+    0 28px 74px rgba(17, 23, 32, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.seo-tool-section::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: linear-gradient(135deg, #000, transparent 72%);
+}
+
+.seo-tool-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.seo-tool-section h2 {
+  max-width: 780px;
+  color: #fff;
+}
+
+.seo-tool-section p {
+  max-width: 720px;
+  color: rgba(238, 242, 248, 0.74);
 }
 
 .seo-calculator {
   display: grid;
-  gap: 18px;
-  margin-top: 26px;
+  gap: 20px;
+  margin-top: 4px;
+  padding: clamp(18px, 3vw, 26px);
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 22px;
+  box-shadow:
+    0 18px 44px rgba(0, 0, 0, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(18px);
 }
 
 .calculator-grid {
@@ -1728,28 +1773,50 @@ body.has-scrolled .site-header {
   color: var(--ink-soft);
   font-size: 0.78rem;
   font-weight: 780;
+  letter-spacing: 0.01em;
 }
 
 .calculator-grid input,
 .calculator-grid select {
   width: 100%;
-  min-height: 50px;
-  padding: 0 13px;
+  min-height: 54px;
+  padding: 0 14px;
   color: var(--ink);
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid var(--line);
-  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #dce2ea;
+  border-radius: 14px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: border-color 180ms ease, background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.calculator-grid input:focus,
+.calculator-grid select:focus {
+  background: #fff;
+  border-color: rgba(54, 185, 109, 0.62);
+  outline: 0;
+  box-shadow:
+    0 0 0 4px rgba(54, 185, 109, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.seo-calculator .button {
+  justify-self: start;
+  min-height: 54px;
 }
 
 .calculator-result {
   display: none;
-  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  padding: clamp(20px, 3vw, 26px);
   color: var(--ink);
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  box-shadow: var(--shadow-sm);
+  background:
+    radial-gradient(circle at 92% 0%, rgba(54, 185, 109, 0.17), transparent 32%),
+    #fff;
+  border: 1px solid #dbe3eb;
+  border-radius: 18px;
+  box-shadow: 0 18px 42px rgba(31, 38, 58, 0.12);
 }
 
 .calculator-result.is-visible {
@@ -1760,6 +1827,7 @@ body.has-scrolled .site-header {
 .calculator-result strong {
   font-size: clamp(1.7rem, 4vw, 2.8rem);
   line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 .calculator-result dl {
@@ -1770,9 +1838,10 @@ body.has-scrolled .site-header {
 }
 
 .calculator-result div {
-  padding: 12px;
-  background: var(--surface-soft);
-  border-radius: 10px;
+  padding: 14px;
+  background: #f1f4f8;
+  border: 1px solid #e2e7ef;
+  border-radius: 13px;
 }
 
 .calculator-result dt {
@@ -2195,13 +2264,19 @@ body.has-scrolled .site-header {
     grid-row: 2;
     order: 3;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 2px;
     padding: 4px;
+    overflow: visible;
   }
 
   .nav-links a {
+    min-width: 0;
     min-height: 34px;
-    padding-inline: 8px;
-    font-size: 0.69rem;
+    padding-inline: 3px;
+    font-size: clamp(0.55rem, 2.2vw, 0.67rem);
+    white-space: nowrap;
   }
 
   .nav-actions {
@@ -2486,6 +2561,11 @@ body.has-scrolled .site-header {
   .related-card {
     min-height: 0;
     padding: 17px;
+  }
+
+  .seo-calculator .button {
+    justify-self: stretch;
+    width: 100%;
   }
 
   .legal-document section + section {
