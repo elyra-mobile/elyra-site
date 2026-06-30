@@ -23,7 +23,7 @@ Elyra is a free iPhone fitness app that brings nutrition, strength training, hyd
 - App category: fitness, strength training, nutrition and progress tracking
 - Public website: https://elyra-app.com
 - App Store: https://apps.apple.com/fr/app/elyra/id6761819130
-- Current website positioning: Elyra V1.1
+- Current website positioning: Elyra V1.1.3
 - Founder mentioned publicly on the website: Ethan Labouly
 - Main language: French
 - Secondary language: English

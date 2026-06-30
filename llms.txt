@@ -11,7 +11,7 @@ Last updated: 2026-06-30
 
 - Free iOS fitness app for people who train in the gym and want one place for nutrition, workouts and progress.
 - Main features: calorie and macro tracking, workout journal, exercise library, unilateral tracking, supplements, hydration, HealthKit steps, Live Activity rest timer, community feed and progress records.
-- Current version promoted on the website: Elyra V1.1.
+- Current version promoted on the website: Elyra V1.1.3.
 - Primary audience: French-speaking strength training and fitness users. English pages are also available for product discovery.
 
 ## Primary Pages
